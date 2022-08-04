@@ -122,9 +122,13 @@ alias i3statusconf='sudo vim /etc/i3status.conf'
 alias picomconf='vim /home/mattia/.config/picom.conf'
 alias mpvconf='vim /home/mattia/.config/mpv/mpv.conf'
 alias dunstconf='vim /home/mattia/.config/dunst/dunstrc'
+alias bashrc='vim /home/mattia/.bashrc'
 # Utilities
 alias wifitest='ping www.google.com'
 alias off='sudo poweroff'
 alias gallery_update='python3 -m pip install -U gallery-dl'
 # APT utilities
-alias update='sudo apt -y update && sudo apt upgrade && sudo apt autoremove'
+alias update='sudo apt -y update && sudo apt -y upgrade && sudo apt autoremove'
+# Git utilities
+alias upgit='git commit -a -m'
+alias statgit='git status -v && git diff'
