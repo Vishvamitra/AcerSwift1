@@ -125,9 +125,9 @@ bindsym Print exec screenshot
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:   General"
+set $ws1 "1:   General"
 set $ws2 "2:   WebApps"
-set $ws3 "3:   Social"
+set $ws3 "3:   Social"
 set $ws4 "4:   Media"
 set $ws5 " 5 "
 set $ws6 " 6 "
@@ -261,7 +261,7 @@ bar {
         status_command i3status
 	position top
 	separator_symbol "                  "
-	font pango:Product Sans Regular 8
+	font pango:Product Sans Bold 8
 	workspace_min_width 80
 	strip_workspace_numbers yes
 	tray_padding 5
