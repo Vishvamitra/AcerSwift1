@@ -260,9 +260,9 @@ bar {
 	}
         status_command i3status
 	position top
-	separator_symbol "                  "
-	font pango:Product Sans Bold 8
-	workspace_min_width 80
+	separator_symbol "           "
+	font pango:Product Sans Bold 10
+	workspace_min_width 100
 	strip_workspace_numbers yes
 	tray_padding 5
 }
