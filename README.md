@@ -12,3 +12,5 @@
 - git
 - redshift
 - scrot
+## Final Result
+![screenshot](pictures/screenshots/2022-08-04_22:31.png)
