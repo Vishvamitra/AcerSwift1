@@ -11,3 +11,4 @@
 - google-chrome
 - git
 - redshift
+- scrot
