@@ -13,5 +13,6 @@ The following utilities and programs are addressed to in the configuration files
 - redshift
 - scrot
 - nitrogen
+- gpick
 ## Final Result
 ![screenshot](pictures/screenshots/2022-08-05_18:12.png)
