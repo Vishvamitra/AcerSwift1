@@ -132,3 +132,4 @@ alias update='sudo apt -y update && sudo apt -y upgrade && sudo apt autoremove'
 # Git utilities
 alias upgit='git commit -a -m'
 alias statgit='git status -v && git diff'
+alias dirgit='cd git/AcerSwft1_files/'
