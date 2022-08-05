@@ -130,6 +130,6 @@ alias gallery_update='python3 -m pip install -U gallery-dl'
 # APT utilities
 alias update='sudo apt -y update && sudo apt -y upgrade && sudo apt autoremove'
 # Git utilities
-alias upgit='git commit -a -m'
+alias upgit='git commit -a -m '$(date +%Y-%m-%d_%H:%M)''
 alias statgit='git status -v && git diff'
 alias dirgit='cd git/AcerSwft1_files/'
