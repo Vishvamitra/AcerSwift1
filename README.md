@@ -5,9 +5,9 @@
 - [play with mpv](https://github.com/Thann/play-with-mpv)
 - [picom](https://github.com/yshui/picom)
 - [gallery-dl](https://github.com/mikf/gallery-dl)
+- [fontawesome](https://fontawesome.com/docs/desktop/)
 - sxiv
 - mpv
 - google-chrome
 - git
-## Final Result
-![screenshot](/home/mattia/git/AcerSwft1_files/screenshots/2022-08-04_22:31.png)
+- redshift
