@@ -1,8 +1,10 @@
 # Explanation
-Here you can find some scrpts which I use on my system.
+Here you can find some scripts which I use on my system.
+
 - `cutefetch`
 
-A very simple script that prints in the terminal emulator some informations about the system you're running: Kernel version, OS, host name, uptime and CPU model.
+A very simple script that prints some informations about the system you're running in the terminal emulatir: Kernel version, OS, uptime, CPU model and the count of installed packages (this one only works for Debian and, possibly, for Debian-based distributions).
+
 
 - `screenshot`
 

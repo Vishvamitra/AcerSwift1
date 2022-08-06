@@ -1,8 +1,10 @@
 # Explanation
 In this directory, the main configuration files of mpv are stored.
+
 - mpv.conf
 
 A configuration file for controlling the general behaviour and look of mpv.
+
 
 - stats.conf
 
