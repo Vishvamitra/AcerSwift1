@@ -4,6 +4,7 @@ This repository contains a relatively small amount of configuration files and sc
 - [play with mpv](https://github.com/Thann/play-with-mpv)
 - [picom](https://github.com/yshui/picom)
 - [gallery-dl](https://github.com/mikf/gallery-dl)
+- lxterminal
 - sxiv
 - mpv
 - google-chrome
@@ -11,6 +12,5 @@ This repository contains a relatively small amount of configuration files and sc
 - redshift
 - scrot
 - nitrogen
-- gpick
 ## Final Result
 ![screenshot](pictures/screenshots/2022-08-06_21:59.png)
