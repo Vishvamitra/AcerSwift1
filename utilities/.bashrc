@@ -129,6 +129,7 @@ alias off='sudo poweroff'
 alias gallery_update='python3 -m pip install -U gallery-dl'
 # APT utilities
 alias update='sudo apt -y update && sudo apt -y upgrade && sudo apt autoremove'
+alias memtop='top -o +USED'
 # Git utilities
 alias upgit='git add -A && git commit -a -m 'beta''
 alias statgit='git status -v && git diff'
