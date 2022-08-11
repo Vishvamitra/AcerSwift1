@@ -2,7 +2,7 @@
 echo -e "\n\n"
 echo -e "\n        \e[1;30m \e[m      Kernel $(uname -r)"
 echo -e "\n        \e[1;37m \e[m      $(lsb_release -d | cut -f 2)"
-echo -e "\n        \e[1;31m \e[m      $(dpkg --get-selections | grep -v deinstall | wc -l) installed packages"
+echo -e "\n        \e[1;31m \e[m      $(dpkg -l | wc -l) installed packages"
 echo -e "\n        \e[1;35m \e[m      i3wm"
 echo -e "\n        \e[1;36m \e[m      $(uname -n)"
 echo -e "\n        \e[1;34m \e[m     $(cat /proc/cpuinfo | grep model\ name | cut -f 2 -d ":" | sort -u)"
