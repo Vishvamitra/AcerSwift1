@@ -128,6 +128,7 @@ alias wifitest='ping www.google.com'
 alias off='sudo poweroff'
 alias gallery_update='python3 -m pip install -U gallery-dl'
 # APT utilities
+alias inst='sudo apt install --no-install-recommends'
 alias update='touch ~/Data/update && sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo find / -type f -cnewer ~/Data/update -exec du -sh {} + | sort -k 2 > Data/newly_updated_packages && dpkg-query -l > ~/Data/package_list'
 alias memtop='top -o +USED'
 # Git utilities
