@@ -126,8 +126,8 @@ bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/$(date +%s).png
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:   General"
-set $ws2 "2:   WebApps"
+set $ws1 "1:   General"
+set $ws2 "2:   WebApps"
 set $ws3 "3:   Social"
 set $ws4 "4:   Media"
 set $ws5 " 5 "
