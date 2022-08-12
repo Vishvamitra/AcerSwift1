@@ -119,7 +119,7 @@ bindsym $mod+a focus parent
 # Custom bindings
 bindsym $mod+c exec google-chrome
 bindsym Print exec screenshot
-bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/$(date +%s).png
+bindsym $mod+Print exec maim -s /tmp/$(date +%s).png
 
 # focus the child container
 #bindsym $mod+d focus child
