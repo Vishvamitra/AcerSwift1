@@ -1,4 +1,4 @@
 #!/bin/bash
 touch /home/mattia/Pictures/timestamp
-maim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H:%M).png
+maim -m 2 ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H:%M).png
 notify-send --icon=/home/mattia/Pictures/Icons/screenshot.jpg "Screenshot tool" "It looks like there's a new screenshot occupying $(find /home/mattia/Pictures/Screenshots/ -type f -cnewer /home/mattia/Pictures/timestamp -exec du -sh {} \; | cut -f1). Check it out!"
