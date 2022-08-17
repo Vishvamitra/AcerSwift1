@@ -5,12 +5,12 @@ This repository contains a relatively small amount of configuration files and sc
 - [picom](https://github.com/yshui/picom)
 - [gallery-dl](https://github.com/mikf/gallery-dl)
 - lxterminal
-- sxiv
+- nsxiv
 - mpv
 - google-chrome
 - git
 - redshift
-- scrot
+- maim
 - nitrogen
 ## Final Result
 ![screenshot](pictures/screenshots/2022-08-06_21:59.png)

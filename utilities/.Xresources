@@ -1,2 +1,3 @@
-Sxiv.background: #d5daf6
-Sxiv.font: Product Sans Regular 8
+Nsxiv.window.background: #d5daf6
+Nsxiv.window.foreground: #5d6386
+Nxiv.bar.font: Product Sans Regular 8

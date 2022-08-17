@@ -8,4 +8,4 @@ A very simple script that prints some informations about the system in the termi
 
 - `screenshot`
 
-A simple script for taking screenshots using `scrot`, moving them to a specific folder and naming them with a specific pattern.
+A simple script for taking screenshots using `maim`, moving them to a specific folder and naming them with a specific pattern.

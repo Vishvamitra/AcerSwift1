@@ -139,9 +139,11 @@ set $ws10 " 10 "
 
 # Colour variables
 set $background "#5d6386"
+set $background2 "#5d638600"
 set $text "#d5daf6"
 set $alert "#F37878"
 set $inactive "#2a2444"
+set $inactive2 "#8C80FE"
 
 # Border colours
 client.focused $text $text $inactive $text $text
@@ -160,7 +162,7 @@ assign [class="Google-chrome" instance="crx_agimnkijcaahngcdmfeangaknmldooml"] $
 assign [class="Google-chrome" instance="crx_hnpfjngllnobngcgfapefoaidbinmjnm"] $ws3
 assign [class="TelegramDesktop" instance="Telegram"] $ws3
 assign [class="Google-chrome" instance="kkhmlnhenkbmpkojdhniaicigbblkobp"] $ws4
-assign [class="Sxiv"] $ws4
+assign [class="Nsxiv"] $ws4
 assign [class="DesktopEditors"] $ws1
 
 # Clients with specific options
@@ -253,12 +255,13 @@ mode "  Move" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	i3bar_command i3bar --transparency 
 	colors {
-		background $background
+		background #5d638600
 		statusline $text
-		focused_workspace $background $background $text 
-		inactive_workspace $background $background $inactive
-		urgent_workspace $background $background $alert
+		focused_workspace $background2 $background2 $text 
+		inactive_workspace $background2 $background2 $inactive2
+		urgent_workspace $background2 $background2 $alert
 	}
         status_command i3status
 	position top
