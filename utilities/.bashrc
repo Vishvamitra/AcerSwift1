@@ -123,6 +123,7 @@ alias picomconf='vim ~/.config/picom.conf'
 alias mpvconf='vim ~/.config/mpv/mpv.conf'
 alias dunstconf='vim ~/.config/dunst/dunstrc'
 alias bashrc='vim ~/.bashrc'
+alias vimrc='sudo vim /etc/vim/vimrc'
 # Utilities
 alias wifitest='ping www.google.com'
 alias off='sudo poweroff'
