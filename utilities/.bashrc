@@ -117,12 +117,12 @@ fi
 
 ## Aliases
 # Configuration files
-alias i3conf='vim /home/mattia/.config/i3/config'
+alias i3conf='vim ~/.config/i3/config'
 alias i3statusconf='sudo vim /etc/i3status.conf'
-alias picomconf='vim /home/mattia/.config/picom.conf'
-alias mpvconf='vim /home/mattia/.config/mpv/mpv.conf'
-alias dunstconf='vim /home/mattia/.config/dunst/dunstrc'
-alias bashrc='vim /home/mattia/.bashrc'
+alias picomconf='vim ~/.config/picom.conf'
+alias mpvconf='vim ~/.config/mpv/mpv.conf'
+alias dunstconf='vim ~/.config/dunst/dunstrc'
+alias bashrc='vim ~/.bashrc'
 # Utilities
 alias wifitest='ping www.google.com'
 alias off='sudo poweroff'
