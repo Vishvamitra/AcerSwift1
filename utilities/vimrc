@@ -81,12 +81,20 @@ vnoremap ò l
 " Rules for specific filetypes
 " autocmd Filetype * command arguments
 " autocmd for markdown files
+" Abbreviations
 autocmd FileType markdown ab prof professore
 autocmd FileType markdown ab cdc Consiglio di Classe
 autocmd FileType markdown ab ds dirigente scolastico
 " autocmd for tex files 
-autocmd FileType plaintex inoremap <p <enter><enter>\begin{figure}[h]<enter>\centering<enter>\includegraphics[width=0.8\linewidth]{}<enter>\caption{}<enter>\label{}<enter>\end{figure}<enter><enter><esc>
+" Key mappings
+autocmd FileType plaintex inoremap .. <esc>A<space>
+autocmd FileType plaintex inoremap ,, <esc>/insert<enter>cw
+autocmd FileType plaintex inoremap ;; <esc>/end<enter>o<enter>
+autocmd FileType plaintex inoremap <tab> <c-x><c-f>
+" Style macros
 autocmd FileType plaintex inoremap <i \textit{}<esc>1ha
+" Macros for general environments (figure, wrapfigure, ecc.ecc.)
+autocmd FileType plaintex inoremap <p <enter><enter>\begin{figure}[h]<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{figure}<enter><enter><esc>/insert<enter>cw
 
 
 " Source a global configuration file if available
