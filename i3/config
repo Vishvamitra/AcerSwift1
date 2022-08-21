@@ -69,7 +69,7 @@ bindsym $mod+z exec --no-startup-id dmenu_run -b -l 30 -i -fn 'Product Sans Regu
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+ograve focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -81,7 +81,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+ograve move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -213,10 +213,10 @@ mode "  Resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 7 px 
+        bindsym k resize grow height 7 px 
+        bindsym l resize shrink height 7 px 
+        bindsym ograve resize grow width 7 px 
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 7 px
@@ -242,10 +242,10 @@ mode "  Move" {
     bindsym Up    move up
     bindsym Right move right
 
-    bindsym h     move left
-    bindsym j     move down
-    bindsym k     move up
-    bindsym l     move right
+    bindsym j     move left
+    bindsym k     move down
+    bindsym l     move up
+    bindsym ograve     move right
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
