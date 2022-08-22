@@ -60,7 +60,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\n\[\033[01;34m\]  \w\n\[\033[00m\]  '
+    PS1='${debian_chroot:+($debian_chroot)}\n\[\033[01;34m\]  \w\n\[\033[00m\]  '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -128,6 +128,7 @@ alias vimrc='sudo vim /etc/vim/vimrc'
 alias wifitest='ping www.google.com'
 alias off='sudo poweroff'
 alias gallery_update='python3 -m pip install -U gallery-dl'
+alias fonts='fc-list | cut -f 2 -d ':' | sort | less'
 # APT utilities
 alias inst='sudo apt install --no-install-recommends'
 alias update='touch ~/Data/update && sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo find /usr/ -type f -cnewer ~/Data/update -exec du -sh {} + | sort -k 2 > Data/newly_updated_packages && dpkg-query -l > ~/Data/package_list'
