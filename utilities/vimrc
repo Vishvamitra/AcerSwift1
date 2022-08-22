@@ -59,11 +59,12 @@ set number
 set relativenumber
 set laststatus=2
 set filetype=on
+set encoding=utf-8
 
 " Word expansion: typing 1 expands to 2
 " ab 1 2 
 
-" Key  bindings
+" General Key  bindings
 " inoremap: INSERT mode
 " nnoremap: COMMAND mode
 " vnoremap: VISUAL mode
@@ -73,6 +74,10 @@ nnoremap j h
 nnoremap k j
 nnoremap l k
 nnoremap ò l
+nnoremap ,, :%s///g<left><left><left>
+nnoremap ;; :s///g<left><left><left>
+nnoremap z <c-v>
+nnoremap Z <s-v>
 vnoremap j h
 vnoremap k j
 vnoremap l k
@@ -85,17 +90,40 @@ vnoremap ò l
 autocmd FileType markdown ab prof professore
 autocmd FileType markdown ab cdc Consiglio di Classe
 autocmd FileType markdown ab ds dirigente scolastico
-" autocmd for tex files 
+autocmd FileType markdown ab cdf corso di formazione
 " Key mappings
-autocmd FileType plaintex inoremap .. <esc>A<space>
-autocmd FileType plaintex inoremap ,, <esc>/insert<enter>cw
-autocmd FileType plaintex inoremap ;; <esc>/end<enter>o<enter>
-autocmd FileType plaintex inoremap <tab> <c-x><c-f>
-" Style macros
-autocmd FileType plaintex inoremap <i \textit{}<esc>1ha
-" Macros for general environments (figure, wrapfigure, ecc.ecc.)
-autocmd FileType plaintex inoremap <p <enter><enter>\begin{figure}[h]<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{figure}<enter><enter><esc>/insert<enter>cw
+autocmd FileType markdown inoremap <i **<esc>1ha
+autocmd FileType markdown inoremap <b ****<esc>2ha
+autocmd FileType markdown inoremap <e ******<esc>3ha
+autocmd FileType markdown inoremap -- <enter>-<space>
+autocmd FileType markdown inoremap __ <enter>1.<space>
+autocmd FileType markdown inoremap .. <esc>A<space>
 
+" autocmd for tex files
+" Key mappings
+autocmd FileType tex inoremap .. <esc>1la<space>
+autocmd FileType tex inoremap ,, <esc>/insert<enter>cw
+autocmd FileType tex inoremap ;; <esc>?insert<enter>cw
+autocmd FileType tex inoremap :: <esc>/end<enter>o<enter>
+autocmd FileType tex inoremap <tab> <c-x><c-f>
+autocmd FileType tex inoremap <s-tab> <c-x><c-n>
+autocmd FileType tex inoremap -- <esc>o\usepackage{insert}<esc>/insert<enter>cw
+autocmd FileType tex inoremap [[ <esc>b1hi[insert]<esc>?insert<enter>cw
+autocmd FileType tex nnoremap >> :! xelatex *.tex && mupdf *.pdf<enter>
+" Style macros
+autocmd FileType tex inoremap <i \textit{}<esc>1ha
+autocmd FileType tex inoremap <b \textbf{}<esc>1ha
+autocmd FileType tex inoremap <c \tetxsc{}<esc>1ha
+autocmd FileType tex inoremap <f \footnote{}<esc>1ha
+" Macros for general environments (figure, wrapfigure, ecc.ecc.)
+autocmd FileType tex inoremap <p <enter><enter>\begin{figure}[h!]<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{figure}<esc>5kA
+autocmd FileType tex inoremap <w <enter><enter>\begin{wrapfigure}{r}{0.25\textwidth}<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{wrapfigure}<esc>/insert<enter>cw
+autocmd FileType tex inoremap <s <enter>\begin{subfigure}{insert}<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\end{subfigure}<esc>?insert<enter>cw
+autocmd Filetype tex inoremap <t <enter>\begin{table}[h]<enter>\centering<enter>\begin{tabular}{m{insert}}<enter>insert<enter>\end{tabular}<enter>\end{table}<esc>/insert<enter>cw
+autocmd Filetype tex inoremap <e \begin{enumerate}<enter>\item<space>insert<enter>\item<space>insert<enter>\item<space>insert<enter>\item<space>insert<enter>\end{enumerate}<esc>/insert<enter>cw
+autocmd Filetype tex inoremap <z \begin{itemize}<enter>\item<space>insert<enter>\item<space>insert<enter>\item<space>insert<enter>\item<space>insert<enter>\end{itemize}<esc>/insert<enter>cw
+autocmd Filetype tex inoremap <d \begin{description}<enter>\item[insert]<space>insert<enter>\item[insert]<space>insert<enter>\item[insert]<space>insert<enter>\item[insert]<space>insert<enter>\end{description}<esc>/insert<enter>cw
+autocmd Filetype tex inoremap <r \begin{insert}<enter>insert<enter>\end{insert}<esc>/insert<enter>cw
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
