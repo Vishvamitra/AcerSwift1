@@ -206,7 +206,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "  Resize" {
+mode "Resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -230,11 +230,11 @@ mode "  Resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "  Resize"
+bindsym $mod+r mode "Resize"
 
 # move floating windows with keys
-bindsym $mod+m mode "  Move" focus floating
-mode "  Move" {
+bindsym $mod+m mode "Move" focus floating
+mode "Move" {
     bindsym $mod+Tab focus right
 
     bindsym Left  move left
