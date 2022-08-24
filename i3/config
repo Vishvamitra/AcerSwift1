@@ -171,6 +171,7 @@ for_window [class="Google-chrome" instance="crx_agimnkijcaahngcdmfeangaknmldooml
 for_window [class="Google-chrome" instance="crx_hnpfjngllnobngcgfapefoaidbinmjnm"] layout tabbed
 for_window [class="TelegramDesktop" instance="Telegram"] layout tabbed
 for_window [class="mpv" instance="gl"] focus
+for_window [class="Nsxiv"] focus
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -267,7 +268,7 @@ bar {
 	position top
 	separator_symbol " || "
 	font pango:Product Sans Bold 10 
-	workspace_min_width 80
+	workspace_min_width 95
 	strip_workspace_numbers yes
 	tray_padding 5
 }

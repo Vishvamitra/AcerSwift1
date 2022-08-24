@@ -138,3 +138,5 @@ alias memtop='top -o +USED'
 alias upgit='git add -A && git commit -a -m 'beta''
 alias statgit='git status -v && git diff'
 alias dirgit='cd git/AcerSwft1_files/'
+# Applications shortcuts
+alias view='nsxiv -fpbrtZa'
