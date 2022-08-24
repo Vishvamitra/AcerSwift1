@@ -69,19 +69,11 @@ set encoding=utf-8
 " nnoremap: COMMAND mode
 " vnoremap: VISUAL mode
 " *map keys to <key>
-inoremap hh <esc>
-nnoremap j h
-nnoremap k j
-nnoremap l k
-nnoremap ò l
-nnoremap ,, :%s///g<left><left><left>
-nnoremap ;; :s///g<left><left><left>
-nnoremap z <c-v>
+inoremap jj <esc>
+nnoremap \s :%s///g<left><left><left>
+nnoremap \\ :s///g<left><left><left>
+nnoremap z <c-v>  
 nnoremap Z <s-v>
-vnoremap j h
-vnoremap k j
-vnoremap l k
-vnoremap ò l
 
 " Rules for specific filetypes
 " autocmd Filetype * command arguments
