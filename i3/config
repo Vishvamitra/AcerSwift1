@@ -268,7 +268,7 @@ bar {
 	position top
 	separator_symbol " || "
 	font pango:Product Sans Bold 10 
-	workspace_min_width 95
+	workspace_min_width 75
 	strip_workspace_numbers yes
 	tray_padding 5
 }
