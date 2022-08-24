@@ -13,4 +13,4 @@ This repository contains a relatively small amount of configuration files and sc
 - maim
 - nitrogen
 ## Final Result
-![screenshot](pictures/screenshots/2022-08-17_09:49.png)
+![screenshot](pictures/screenshots/Screenshots/2022-08-24_12:06.png)
