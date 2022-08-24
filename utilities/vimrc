@@ -97,7 +97,7 @@ autocmd FileType markdown inoremap <b ****<esc>2ha
 autocmd FileType markdown inoremap <e ******<esc>3ha
 autocmd FileType markdown inoremap -- <enter>-<space>
 autocmd FileType markdown inoremap __ <enter>1.<space>
-autocmd FileType markdown inoremap .. <esc>A<space>
+autocmd FileType markdown inoremap .. <esc>wwi<space>
 
 " autocmd for tex files
 " Key mappings
@@ -105,8 +105,8 @@ autocmd FileType tex inoremap .. <esc>1la<space>
 autocmd FileType tex inoremap ,, <esc>/insert<enter>cw
 autocmd FileType tex inoremap ;; <esc>?insert<enter>cw
 autocmd FileType tex inoremap :: <esc>/end<enter>o<enter>
-autocmd FileType tex inoremap <tab> <c-x><c-f>
-autocmd FileType tex inoremap <s-tab> <c-x><c-n>
+autocmd FileType tex inoremap <s-tab> <c-x><c-f>
+autocmd FileType tex inoremap <tab> <c-x><c-n>
 autocmd FileType tex inoremap -- <esc>o\usepackage{insert}<esc>/insert<enter>cw
 autocmd FileType tex inoremap [[ <esc>b1hi[insert]<esc>?insert<enter>cw
 autocmd FileType tex inoremap ]] <esc>ea[insert]<esc>?insert<enter>cw

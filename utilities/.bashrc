@@ -116,27 +116,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## Aliases
-# Configuration files
-alias i3conf='vim ~/.config/i3/config'
-alias i3statusconf='sudo vim /etc/i3status.conf'
-alias picomconf='vim ~/.config/picom.conf'
-alias mpvconf='vim ~/.config/mpv/mpv.conf'
-alias dunstconf='vim ~/.config/dunst/dunstrc'
-alias bashrc='vim ~/.bashrc'
-alias vimrc='sudo vim /etc/vim/vimrc'
-# Utilities
-alias wifitest='ping www.google.com'
-alias off='sudo poweroff'
-alias gallery_update='python3 -m pip install -U gallery-dl'
-alias fonts='fc-list | cut -f 2 -d ':' | sort | less'
-# APT utilities
-alias inst='sudo apt install --no-install-recommends'
-alias update='touch ~/Data/update && sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo find /usr/ -type f -cnewer ~/Data/update -exec du -sh {} + | sort -k 2 > Data/newly_updated_packages && dpkg-query -l > ~/Data/package_list'
-alias memtop='top -o +USED'
-# Git utilities
-alias upgit='git add -A && git commit -a -m 'beta''
-alias statgit='git status -v && git diff'
-alias dirgit='cd git/AcerSwft1_files/'
-# Applications shortcuts
-alias view='nsxiv -fpbrtZa'
