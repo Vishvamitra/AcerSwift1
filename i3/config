@@ -126,7 +126,7 @@ bindsym $mod+Print exec maim -s /tmp/$(date +%s).png
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:    General "
+set $ws1 "1:    General"
 set $ws2 "2:    Web"
 set $ws3 "3:    Social"
 set $ws4 "4:    Media"
@@ -266,9 +266,8 @@ bar {
 	}
         status_command i3status
 	position top
-	separator_symbol " || "
 	font pango:Product Sans Bold 10 
-	workspace_min_width 90
+	workspace_min_width 60
 	strip_workspace_numbers yes
 	tray_padding 5
 }
