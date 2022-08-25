@@ -54,7 +54,7 @@ set smartcase		" Do smart case matching
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
-" set hlsearch
+set hlsearch
 set number
 set relativenumber
 set laststatus=2
@@ -103,12 +103,13 @@ autocmd FileType tex inoremap -- <esc>o\usepackage{insert}<esc>/insert<enter>cw
 autocmd FileType tex inoremap [[ <esc>b1hi[insert]<esc>?insert<enter>cw
 autocmd FileType tex inoremap ]] <right>[insert]<esc>?insert<enter>cw
 autocmd FileType tex inoremap << <right>{insert}<esc>?insert<enter>cw
-autocmd FileType tex nnoremap >> :! xelatex *.tex && mupdf *.pdf<enter>
+autocmd FileType tex nnoremap >> :! xelatex *.tex && zathura --mode=fullscreen *.pdf<enter>
 " Style macros
 autocmd FileType tex inoremap <i \textit{}<esc>1ha
 autocmd FileType tex inoremap <b \textbf{}<esc>1ha
 autocmd FileType tex inoremap <c \tetxsc{}<esc>1ha
 autocmd FileType tex inoremap <f \footnote{}<esc>1ha
+autocmd FileType tex inoremap <h \hyperref[insert]{insert}<esc>/insert<enter>cw
 " Macros for general environments (figure, wrapfigure, ecc.ecc.)
 autocmd FileType tex inoremap <p <enter><enter>\begin{figure}[h!]<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{figure}<esc>5kA
 autocmd FileType tex inoremap <w <enter><enter>\begin{wrapfigure}{r}{0.25\textwidth}<enter>\centering<enter>\includegraphics[width=insert]{insert}<enter>\caption{insert}<enter>\label{insert}<enter>\end{wrapfigure}<esc>/insert<enter>cw
