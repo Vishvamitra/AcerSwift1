@@ -54,7 +54,7 @@ set smartcase		" Do smart case matching
 "set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
-set hlsearch
+" set hlsearch
 set number
 set relativenumber
 set laststatus=2
@@ -81,7 +81,7 @@ nnoremap Z <s-v>
 " Abbreviations
 autocmd FileType markdown ab prof professore
 autocmd FileType markdown ab cdc Consiglio di Classe
-autocmd FileType markdown ab ds dirigente scolastico
+autocmd FileType markdown ab ds Dirigente Scolastico
 autocmd FileType markdown ab cdf corso di formazione
 " Key mappings
 autocmd FileType markdown inoremap <i **<esc>1ha
