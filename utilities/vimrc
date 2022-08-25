@@ -70,8 +70,8 @@ set encoding=utf-8
 " vnoremap: VISUAL mode
 " *map keys to <key>
 inoremap jj <esc>
-nnoremap \s :%s///g<left><left><left>
-nnoremap \\ :s///g<left><left><left>
+nnoremap \\ :%s///g<left><left><left>
+nnoremap \s :s///g<left><left><left>
 nnoremap z <c-v>  
 nnoremap Z <s-v>
 
@@ -101,8 +101,8 @@ autocmd FileType tex inoremap <s-tab> <c-x><c-f>
 autocmd FileType tex inoremap <tab> <c-x><c-n>
 autocmd FileType tex inoremap -- <esc>o\usepackage{insert}<esc>/insert<enter>cw
 autocmd FileType tex inoremap [[ <esc>b1hi[insert]<esc>?insert<enter>cw
-autocmd FileType tex inoremap ]] <esc>ea[insert]<esc>?insert<enter>cw
-autocmd FileType tex inoremap << <esc>ea{insert}<esc>?insert<enter>cw
+autocmd FileType tex inoremap ]] <right>[insert]<esc>?insert<enter>cw
+autocmd FileType tex inoremap << <right>{insert}<esc>?insert<enter>cw
 autocmd FileType tex nnoremap >> :! xelatex *.tex && mupdf *.pdf<enter>
 " Style macros
 autocmd FileType tex inoremap <i \textit{}<esc>1ha
