@@ -107,7 +107,7 @@ autocmd FileType tex nnoremap >> :! xelatex *.tex && zathura --mode=fullscreen *
 " Style macros
 autocmd FileType tex inoremap <i \textit{}<esc>1ha
 autocmd FileType tex inoremap <b \textbf{}<esc>1ha
-autocmd FileType tex inoremap <c \tetxsc{}<esc>1ha
+autocmd FileType tex inoremap <c \textsc{}<esc>1ha
 autocmd FileType tex inoremap <f \footnote{}<esc>1ha
 autocmd FileType tex inoremap <h \hyperref[insert]{insert}<esc>/insert<enter>cw
 " Macros for general environments (figure, wrapfigure, ecc.ecc.)
