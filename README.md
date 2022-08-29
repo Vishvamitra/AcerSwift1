@@ -12,5 +12,8 @@ This repository contains a relatively small amount of configuration files and sc
 - redshift
 - maim
 - nitrogen
+- wmctrl[^1]
+
+[^1]: This simple utility is required in order for the "cutefetch" script to detect the window manager
 ## Final Result
 ![screenshot](screenshots/2022-08-25_16:49.png)
