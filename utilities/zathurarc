@@ -4,3 +4,4 @@ set page-padding 30
 set guioptions none
 set pages-per-row 2
 set scroll-page-aware true
+set default-bg "#D5DAF6"
