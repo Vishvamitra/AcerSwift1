@@ -1,6 +1,6 @@
 #!/bin/bash
 echo -e "\n"
-echo -e "              \e[1;30m   Kernel\e[m                                      $(uname -r)"
+echo -e "              \e[1;30m   Kernel\e[m                                       $(uname -r)"
 echo -e "\n              \e[1;37m   OS\e[m                           $(lsb_release -d | cut -f 2)"
 echo -e "\n              \e[1;32m   Installed Packages\e[m                                    $(dpkg -l | wc -l)"
 echo -e "\n              \e[1;35m   Window Manager\e[m                                         $(wmctrl -m | grep -i name | cut -f 2 -d ":")"

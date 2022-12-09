@@ -129,7 +129,7 @@ bindsym $mod+Print exec maim -s /tmp/$(date +%s).png
 set $ws1 "1:    General"
 set $ws2 "2:    Web"
 set $ws3 "3:    Social"
-set $ws4 "4:    Media"
+set $ws4 "4:    Media"
 set $ws5 " 5 "
 set $ws6 " 6 "
 set $ws7 " 7 "
@@ -143,7 +143,7 @@ set $background2 "#5d638600"
 set $text "#d5daf6"
 set $alert "#F37878"
 set $inactive "#2a2444"
-set $inactive2 "#8C80FE"
+set $inactive2 "#31375a"
 
 # Border colours
 client.focused $text $text $inactive $text $text

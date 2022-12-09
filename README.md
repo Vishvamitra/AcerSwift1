@@ -1,5 +1,5 @@
 # Overview
-This repository contains a relatively small amount of configuration files and scripts with the purpose of creating a minimal i3 desktop setup.
+This repository contains a relatively small amount of configuration files and scripts with the purpose of (re)creating a minimal i3 desktop setup.
 ## Software Requirements
 - [play with mpv](https://github.com/Thann/play-with-mpv)
 - [picom](https://github.com/yshui/picom)
